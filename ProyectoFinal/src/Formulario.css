@@ -1,0 +1,4 @@
+.Formulario .inputFormulario{
+    display: flex;
+    flex-direction: column;
+}
