@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-function Header(){
+function Header({titulo}){
 
     return(
         <div className="Header">
-            <h1>Esto es un titulo</h1>
+            <h1>{titulo}</h1>
         </div>
         
     )

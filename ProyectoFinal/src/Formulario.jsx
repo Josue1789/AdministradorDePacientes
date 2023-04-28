@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import './Formulario.css'
 
-    function Formulario() {
-        const [pacientes, setPacientes] = useState([])
+    function Formulario({pacientes,setPacientes}) {
         const [mascota, setMascota] = useState("")
         const [dueño, setDueño] = useState("")
         const [fecha, setFecha]=useState("")
@@ -36,8 +35,9 @@ import './Formulario.css'
                 <input onChange={(e)=>{setFecha(e.target.value)}} value={fecha} type="date" />
                 <label htmlFor="">Hora de Ingreso</label>
                 <input onChange={(e)=>{setHora(e.target.value)}} value={hora} type="time" />
-                <label htmlFor="">Comentarios adicionales</label>
+                <label htmlFor="">Sintomas</label>
                 <textarea onChange={(e)=>{setComs(e.target.value)}} value={coms} type="text" />
+                
                 <button onClick={agregarPaciente} type='button'>Agregar</button>
             </form>
         </div>
